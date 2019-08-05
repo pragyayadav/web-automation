@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.automationPractice.test.stepDefination.BaseClass;
+import com.automationPractice.test.stepDefinition.BaseClass;
 
 public class ShoppingCartPage extends BaseClass{
 

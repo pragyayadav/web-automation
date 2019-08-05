@@ -1,3 +1,4 @@
+@test
 Feature: Order a product
 
   Scenario: Order T-shirt and verify in order history

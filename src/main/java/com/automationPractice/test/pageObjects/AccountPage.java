@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import junit.framework.Assert;
+
 public class AccountPage {
 	public WebDriver ldriver;
 
@@ -19,6 +21,9 @@ public class AccountPage {
 	@FindBy(xpath = "//a[@title='Orders']")
 	WebElement orderHistory;
 	
+	@FindBy(xpath = "//a[@title='Information']")
+	WebElement personalInfo;
+	
 	public void clickUser()
 	{
 		userAccount.click();
@@ -28,5 +33,16 @@ public class AccountPage {
 	{
 		orderHistory.click();
 	}
+	
+	public void clickPersonalInfo()
+	{
+		personalInfo.click();
+	}
+	
+	public void assertUserName(String updatedUserName)
+	{
+	 Assert.assertEquals(updatedUserName, userAccount.getText());
+	}
+
 
 }
